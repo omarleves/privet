@@ -1,0 +1,396 @@
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+    *{
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    .banner{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: #3475ca;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        opacity: .25;
+    }
+    .banner .content{
+        position: relative;
+        max-width: 750px;
+        text-align: center;
+    }
+    .banner .content .heading{
+        color: #fff;
+        font-size: 60px;
+    }
+    .banner .content p{
+        color: #fff;
+        font-size: 18px;
+    }
+    .banner header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner header .logo{
+        position: absolute;
+        z-index: 10000;
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .about{
+        position: relative;
+        width: 100%;
+        display: flex;
+    }
+    .about .contentBx{
+        background: #162c3b;
+        padding: 100px;
+        width: 50%;
+    }
+    .heading{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    .text{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .about .imgBx{
+        background: url(https://images.pexels.com/photos/1557183/pexels-photo-1557183.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+        width: 50%;
+        background-size: cover;
+        background-position: center ;
+    }
+
+    .services{
+        background: #12222d;
+        padding: 100px;
+        text-align: center;
+    }
+    .services .continar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+    .services .continar .serviceBx{
+        position: relative;
+        background: #fff;
+    }
+    .services .continar .serviceBx img{
+        max-width: 100px;
+        max-height: 300px;
+    }
+    .services .continar .serviceBx{
+        position: relative;
+        background: #fff;
+        width: 350px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .services .continar .serviceBx h2{
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .technology{
+        background: #3f8ffc;
+        width: 100%;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 300px;
+        margin-top: -300px;
+    }
+    .technology .iconBx{
+        font-size: 100px;
+        width: 250px;
+        margin-bottom: -50px;
+        margin-right: 50px;
+        position: absolute;
+        right: 0;
+        align-items: center;
+    }
+    .technology .contentBx{
+        max-width: 800px;
+    }
+
+    .client{
+        background: #162c3b;
+        padding: 100px;
+        text-align: center;
+    }
+    .client .imgBx{
+        background: #12222d;
+    }
+    .client .BrandBx{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .client .BrandBx i{
+        font-size: 50px;
+        font-weight: 400;
+        color: #fff;
+        opacity: .25;
+        cursor: pointer;
+    }
+    .client .BrandBx i:hover{
+        opacity: 1;
+    }
+
+    .testimonials{
+        position: relative;
+        padding: 100px;
+        background: #12222d;
+        text-align: center;
+    }
+    .testimonials .continar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    .testimonials .continar .contentBx{
+        background: #fff;
+        padding: 60px 50px;
+        width: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin-top: 20px;
+    }
+    .testimonials .continar .contentBx p{
+        font-style: italic;
+    }
+    .testimonials .continar .contentBx h3{
+        width: 100%;
+        text-align: end;
+        font-weight: 500;
+        color: #3f8ffc;
+    }
+
+    .contact{
+        padding: 100px;
+        background: #162c3b;
+        text-align: center;
+    }
+    .imgBx2{
+        background: url(https://images.pexels.com/photos/1978181/pexels-photo-1978181.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+    }
+    .about .redBg{
+        background: url(https://media.istockphoto.com/photos/red-old-matte-grunge-faded-adobe-plaster-texture-abstract-cement-picture-id1299674661?b=1&k=20&m=1299674661&s=170667a&w=0&h=TI7PCc8wsK7eaL7bLFwLQJ8w0b1uR5JiYubOSy9OaKk=);
+        background-size: cover;
+        background-size: cover;
+        border: 1px solid Rendering;
+    }
+    .form .inputBx{
+        margin-bottom: 40px;
+    }
+    .form .inputBx input{
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 10px 0;
+        font-size: 18PX;
+        font-weight: 300;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+    .form .inputBx input::placeholder{
+        color: #fff;
+    }
+    .form .inputBx textarea{
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 10px 0;
+        min-height: 150px;
+        font-size: 18PX;
+        font-weight: 300;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+    .form .inputBx textarea::placeholder{
+        color: #fff;
+    }
+    .form .inputBx input[type="submit"]{
+        width: 150px;
+        background: #fff;
+        color: #111;
+        cursor: pointer;
+        font-weight: 400;
+    }
+    .form .inputBx input[type="submit"]:active{
+        background-color: transparent;
+        color: white;
+    }
+    .footer{
+        width: 100%;
+        background: #162c3b;
+        padding: 20px;
+    }
+    .footer ul{
+        width: 50%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer ul a{
+        display: inline-block;
+        text-align: center;
+        color: white;
+        font-size: 30px;        
+    }
+    .footer p{
+        font-weight: 400;
+    }
+
+
+    @media (max-width: 990px) {
+        .banner header{
+            padding: 30px 50px;
+        }
+        .banner .content h2{
+            font-size: 36px;
+        }
+        .banner .content p{
+            font-size: 16px;
+        }
+        .about{
+            flex-direction: column;
+        }
+        .about .contentBx,
+        .about .imgBx{
+            width: 100%;
+            padding: 50px;
+            min-height: 400px;
+            text-align: center;
+        }
+        .services{
+            padding: 50px;
+        }
+        .services .continar{
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .services .continar .serviceBx{
+            margin: 20px;
+            width: 300px;
+            min-height: 350px;
+        }
+        .technology {
+            padding: 50px;
+            padding-top: 300px;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .technology .iconBx{
+            position: relative;
+            margin-top: 20px;
+        }
+        .client{
+            padding: 50px;
+        }
+        .client .BrandBx{
+            position: relative;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .testimonials{
+            padding: 50px;
+        }
+        .testimonials .contentBx{
+            margin-bottom: 40px;
+            padding: 60px 40px;
+            max-width: 550px;
+        }
+        .testimonials .contentBx:last-child{
+            margin-bottom: 0;
+        }
+        .contant{
+            padding: 50px;
+            
+        }
+        .footer{
+            padding: 20px 50px;
+        }
+    }
+    @media (max-width: 1238px){
+        .services{
+            padding: 50px;
+        }
+        .services .continar{
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .services .continar .serviceBx{
+            margin: 20px;
+        }
+    }
+    @media (max-width: 1186px){
+        .technology .iconBx{
+            position: relative;
+            margin-top: 20px;
+        }
+        .technology {
+            padding: 50px;
+            padding-top: 300px;
+            justify-content: center;
+            flex-direction: column;
+        }
+        @media (max-width: 1272px){
+            .testimonials .contentBx{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }

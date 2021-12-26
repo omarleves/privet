@@ -1,0 +1,268 @@
+/*===========================================
+Global Section Styling Start
+===========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none; 
+    text-transform: capitalize;
+    transition: all .2s linear; 
+}
+:root{
+    --red: #e60000;
+    --black: #222;
+    --white: #fff;
+    --light-color:#666;
+    --light-bg: #eee; 
+    --border: .2rem solid var(--black); 
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: var(red);
+}
+section{
+    padding: 3rem 9%;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1.7rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem) scale(.4);
+    }
+}
+/*===========================================
+Global Section Styling End
+===========================================*/
+
+
+/*===========================================
+Header Section Styling Start
+===========================================*/
+header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 9%;
+}
+header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+i{
+    color: var(--red);
+    margin-right: .5rem;
+}
+.navbar a{
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+.navbar a:hover{
+    color: var(--red);
+}
+.icons div ,
+.icons a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: var(--light-bg);
+    font-size: 1.7rem;
+    color: var(--black);
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer; 
+}
+.icons div:hover ,
+.icons a:hover{
+    color: var(--white);
+    background: var(--red);
+}
+#menu-btn{
+    display: none;
+}
+.search-form{
+    position: absolute;
+    top: 99%; left: 0; right: 0;
+    height: 6rem;
+    background: var(--white);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.search-form input{
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    text-transform: none;
+}
+.search-form label{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    color: var(--black)
+}
+.search-form label:hover{
+    color: var(--red);
+}
+.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+/*===========================================
+Header Section Styling End
+===========================================*/
+
+
+/*===========================================
+Home Section Styling Start
+===========================================*/
+.home{
+    position: relative;
+    padding: 0; 
+}
+.home .slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    min-height: 60vh;
+    display: none;
+    width: 100%;
+}
+.home .slide.active{
+    display: flex;
+}
+.home .slide-1{
+    background: url(https://res.cloudinary.com/mommy-nearest/image/upload/c_crop,h_2560,w_5760,x_0,y_295/c_scale,f_auto,fl_lossy,q_75,w_848/w3lzkbcj5cmi0qzybbhm);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .slide-2{
+    background: url(https://cdn.pixabay.com/photo/2016/09/01/10/50/christmas-1635787_960_720.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .slide .content{
+    margin: auto;
+    text-align: center;
+}
+.home .slide .content span{
+    color: var(--black);
+    display: block;
+    font-size: 3rem;
+    text-shadow: var(--box-shadow);
+}
+.home .slide .content h3{
+    font-size: 5rem;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+    text-transform: uppercase;
+    animation: fadein .2s linear backwards .4s;
+}
+.home .slide .content .btn{
+    animation: fadein .2s linear backwards .4s;
+}
+/*===========================================
+Home Section Styling End
+===========================================*/
+
+
+/*===========================================
+Header Section Styling Start
+===========================================*/
+/*===========================================
+Header Section Styling End
+===========================================*/
+
+
+/*===========================================
+Header Section Styling Start
+===========================================*/
+/*===========================================
+Header Section Styling End
+===========================================*/
+
+
+/*===========================================
+Header Section Styling Start
+===========================================*/
+/*===========================================
+Header Section Styling End
+===========================================*/
+
+
+/*===========================================
+Header Section Styling Start
+===========================================*/
+/*===========================================
+Header Section Styling End
+===========================================*/
+
+
+/*===========================================
+Header Section Styling Start
+===========================================*/
+/*===========================================
+Header Section Styling End
+===========================================*/
+
+
+/*===========================================
+Header Section Styling Start
+===========================================*/
+/*===========================================
+Header Section Styling End
+===========================================*/
+
+
+/*===========================================
+Header Section Styling Start
+===========================================*/
+/*===========================================
+Header Section Styling End
+===========================================*/
+
+
+/*===========================================
+Header Section Styling Start
+===========================================*/
+/*===========================================
+Header Section Styling End
+===========================================*/
